@@ -6,12 +6,13 @@ export default function Home() {
       <Head>
         <title>Holdn</title>
         <link href={asset('/index.css')} rel="stylesheet" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙌</text></svg>"></link>
       </Head>
       <section class="content-wrapper">
         <h1 class="text-upper">Holdn</h1>
         <p>Need a placeholder image, but don't want to use a random picture generator? Holdn is here for you</p>
         <a href="https://github.com/gingerchew/holdn">Github</a>
-      </section>
+      </section>🙌
       <section>
         <ul className="directions">
           <li data-title="Dimensions">
