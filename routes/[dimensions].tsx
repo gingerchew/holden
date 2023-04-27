@@ -1,16 +1,6 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 const getDimensions = (v:string) => v.indexOf('x') > 0 ? v.split('x').map(v => +v) : [+v, +v];
-/*
-export default function Greet(props: PageProps) {
-  const [x, y] = getDimensions(props.params.dimensions);
-  // console.log(getDimensions(props.params.dimensions));
-  const label = x+'x'+y;
-  return <svg width={x} height={y} style="font-family: sans-serif;background-color: #edeff1;container-type: inline-size;">
-    <text text-anchor="middle" x={x / 2 - label.length} y={y / 2} style="font-size: clamp(10px, 10cqi, 40px)">{`${x}x${y}`}</text>
-  </svg>
-}
-*/
 
 const Image = ({ x, y }: {x:number; y:number;}) => {
   const textStyles = 'font-family: sans-serif;font-size: clamp(10px, 10cqi, 48px);';
