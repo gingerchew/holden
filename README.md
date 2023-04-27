@@ -1,11 +1,3 @@
-# fresh project
+# Holden
 
-### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+Placeholder images for the working man.
