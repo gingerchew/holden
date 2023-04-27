@@ -15,7 +15,7 @@ export default function Home() {
       <section>
         <ul className="directions">
           <li data-title="Dimensions">
-            <div  className="content-wrapper">
+            <div className="content-wrapper">
               <h2>To generate the image you need, add the dimensions to the end of the url.</h2>
               <p>E.g. <code>/200</code> will generate an image 200x200 in size. <code>/200x300</code> will generate an image 200x300 in size</p>
               <img src="https://gingerchew-holden.deno.dev/200x300" alt="" height="300" width="200"/>
