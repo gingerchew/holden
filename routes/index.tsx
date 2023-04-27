@@ -18,7 +18,7 @@ export default function Home() {
             <div  className="content-wrapper">
               <h2>To generate the image you need, add the dimensions to the end of the url.</h2>
               <p>E.g. <code>/200</code> will generate an image 200x200 in size. <code>/200x300</code> will generate an image 200x300 in size</p>
-              <img src="/200x300" alt="" height="200" width="300"/>
+              <img src="https://gingerchew-holden.deno.dev/200x300" alt="" height="200" width="300"/>
             </div>
           </li>
         </ul>

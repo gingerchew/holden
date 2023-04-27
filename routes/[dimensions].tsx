@@ -1,6 +1,9 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 
-const getDimensions = (v:string) => v.indexOf('x') > 0 ? v.split('x').map(v => +v) : [+v, +v];
+const getDimensions = (v:string) => {
+  
+  return v.indexOf('x') > 0 ? v.split('x').map(v => +v) : [+v, +v];
+}
 
 const Image = ({ x, y }: {x:number; y:number;}) => {
   const textStyles = 'font-family: sans-serif;font-size: clamp(10px, 10cqi, 48px);';
@@ -15,7 +18,8 @@ export const handler: Handlers<string | null> = {
   GET(_, ctx) {
     const [x, y] = getDimensions(ctx.params.dimensions);
     const output = Image({ x, y })
-    console.log(output);
+    if (!ctx.params.dimensions.match(/\d*?x\d*?/)) return ctx.render();
+    
     return new Response(output, {
       headers: { 'Content-Type': 'image/svg+xml' }
     })
@@ -24,7 +28,7 @@ export const handler: Handlers<string | null> = {
 
 export default function ImageWrapper(props: PageProps) {
   const [x, y] = getDimensions(props.params.dimensions);
-  console.log(props.data);
+
   return (
     <div>
       <h1>Wait a second... What are you doing here??</h1>
