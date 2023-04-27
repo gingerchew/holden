@@ -4,12 +4,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>Holden</title>
         <link href={asset('/index.css')} rel="stylesheet" />
       </Head>
       <section class="content-wrapper">
         <h1 class="text-upper">Holden</h1>
         <p>Need a placeholder image, but don't want to use a random picture generator? Holden is here for you</p>
+        <a href="https://github.com/gingerchew/holden">Github</a>
       </section>
       <section>
         <ul className="directions">
